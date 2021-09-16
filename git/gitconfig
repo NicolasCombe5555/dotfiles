@@ -1,0 +1,46 @@
+### User
+[includeIf "gitdir:~/Documents/"]
+  path = .gitconfig-work.config
+[includeIf "gitdir:~/Desktop/"]
+  path = .gitconfig-dev.config
+
+### Aliases
+[alias]
+	undo = "reset --soft HEAD~1"
+[alias]
+	punch = "push --force-with-lease"
+[alias]
+	conflictPull = "pull --no-commit" # origin branchName
+[alias]
+  	dif = "diff HEAD"
+[alias]
+  	stashm = "stash -m" # name as argument
+[alias]
+ 	c = "commit -am" # name as argument
+[alias]
+	unwatch = "update-index --assume-unchanged" # with file as argument
+[alias]
+	watch = "update-index --no-assume-unchanged" # with file as argument
+[alias]
+	unwatched = "!git ls-files -v | grep '^[[:lower:]]'"
+[alias]
+	watchall = "!git unwatched | xargs -L 1 -I % sh -c 'git watch `echo % | cut -c 2-`'"
+[alias]
+	listNotDeleted = "!git branch -r --merged | grep -v '\\*\\|master\\|develop' | sed 's/origin\\///'"
+[alias]
+	staleBranches = "for-each-ref --sort=-committerdate refs/heads/ refs/remotes --format='%(authordate:short) %(authorname) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))'"
+[alias]
+	cleanup = "branch -r --merged | grep -v '\\*\\|master\\|develop' | sed 's/origin\\///' | xargs -n 1 git push --delete origin"
+
+### Default configs
+[fetch]
+	prune = true
+[pull]
+	rebase = false
+
+### https://github.com/banga/git-split-diffs
+[core]
+	pager = git-split-diffs --color | less -RFX
+[split-diffs]
+	theme-name = "github-light"
+	syntax-highlighting-theme =
