@@ -20,16 +20,11 @@ cleandd() {
   echo "Removed all derived data."
 }
 
-cleanBazelCache() {
-  rm -rf ~/Users/usuario/bazel-local-cache
-  echo "Removed bazel cache."
-}
-
 go_to_chat() {
   cd ~/Desktop/ios-rappi-main/libraries/Chat/Chat_Example
 }
 
-git_destroy() {
+gitdestroy() {
   git prune
   git clean -d -f . # deletes all local current untracked files
   git reset --hard # discards local changes
