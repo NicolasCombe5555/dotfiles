@@ -25,11 +25,12 @@ cleanBazelCache() {
   echo "Removed bazel cache."
 }
 
-goToChat() {
+go_to_chat() {
   cd ~/Desktop/ios-rappi-main/libraries/Chat/Chat_Example
 }
 
-gitDestroy() {
+git_destroy() {
+  git prune
   git clean -d -f . # deletes all local current untracked files
   git reset --hard # discards local changes
 }
