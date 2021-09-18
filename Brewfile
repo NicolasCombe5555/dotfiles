@@ -8,6 +8,7 @@ brew ripgrep
 # brew spaceship
 brew swiftlint
 brew tmux
+brew tokei
 
 ### Cask
 cask periphery
