@@ -5,8 +5,8 @@
 brew fd
 brew mas
 brew ripgrep
-# brew spaceship
 brew shellcheck
+brew starship
 brew swiftlint
 brew tmux
 brew tokei
