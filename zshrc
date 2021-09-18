@@ -1,12 +1,19 @@
 ### MARK: Install https://ohmyz.sh
 
 ### Oh my zsh config
+
+export ZSH="/Users/nicolascombe/.oh-my-zsh" # Path to my oh-my-zsh installation.
+
+ZSH_DISABLE_COMPFIX="true" # https://stackoverflow.com/questions/61433167/zsh-detects-insecure-completion-dependent-directories
+DISABLE_UPDATE_PROMPT="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
 plugins=(
   git
   zsh-autosuggestions
 )
 
-ZSH_DISABLE_COMPFIX="true" # https://stackoverflow.com/questions/61433167/zsh-detects-insecure-completion-dependent-directories
+source $ZSH/oh-my-zsh.sh
 
 ### Aliases
 alias dog='cat -b'
