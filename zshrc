@@ -33,3 +33,6 @@ gitDestroy() {
   git clean -d -f . # deletes all local current untracked files
   git reset --hard # discards local changes
 }
+
+### Starship - https://github.com/starship/starship
+eval "$(starship init zsh)"
