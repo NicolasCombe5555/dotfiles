@@ -3,7 +3,7 @@
 
 ### Brew
 brew fd
-# brew mas
+brew mas
 brew ripgrep
 # brew spaceship
 brew shellcheck
