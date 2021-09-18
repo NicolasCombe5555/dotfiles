@@ -6,6 +6,8 @@
 
 ### Aliases
 [alias]
+	leaderboard = "shortlog -s -n"
+[alias]
 	undo = "reset --soft HEAD~1"
 [alias]
 	punch = "push --force-with-lease"
