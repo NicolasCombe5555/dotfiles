@@ -1,8 +1,8 @@
 ### User
-[includeIf "gitdir:~/Documents/"]
-  path = .gitconfig-work.config
+[includeIf "gitdir:~/Projects/"]
+  path = .gitconfig-work
 [includeIf "gitdir:~/Desktop/"]
-  path = .gitconfig-dev.config
+  path = .gitconfig-dev
 
 ### Aliases
 [alias]
