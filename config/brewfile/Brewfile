@@ -3,8 +3,12 @@
 ### Brew
 brew alacritty
 brew bat
+brew exa
 brew fd
+brew git-delta
+brew httpie
 brew mas
+brew neovim
 brew ripgrep
 brew shellcheck
 brew starship

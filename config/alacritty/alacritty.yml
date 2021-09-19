@@ -1,8 +1,5 @@
 ### https://github.com/alacritty/alacritty/blob/master/alacritty.yml
 
-# Make background slightly transparent
-background_opacity: 0.92
-
 window:
   startup_mode: Fullscreen
 

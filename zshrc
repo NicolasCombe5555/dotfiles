@@ -20,9 +20,9 @@ source $ZSH/oh-my-zsh.sh
 
 ### Aliases
 alias dog='cat -b'
-alias lastTen='ls -lt | head'
-alias lsn='ls -hal'
-alias lss='ls -halSR'
+alias list='exa -a1'
+alias lsn='exa -hal'
+alias lss='exa -halSR'
 
 
 ### Methods
