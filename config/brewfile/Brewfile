@@ -2,6 +2,7 @@
 
 ### Brew
 brew alacritty
+brew bat
 brew fd
 brew mas
 brew ripgrep
