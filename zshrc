@@ -17,20 +17,20 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+
 ### Aliases
 alias dog='cat -b'
 alias lastTen='ls -lt | head'
 alias lsn='ls -hal'
 alias lss='ls -halSR'
 
+
 ### Methods
+
+## General
 cleandd() {
   rm -rf ~/Library/Developer/Xcode/DerivedData
   echo "Removed all derived data."
-}
-
-go_to_chat() {
-  cd ~/Desktop/ios-rappi-main/libraries/Chat/Chat_Example
 }
 
 gitdestroy() {
@@ -38,6 +38,21 @@ gitdestroy() {
   git clean -d -f . # deletes all local current untracked files
   git reset --hard # discards local changes
 }
+
+## Local
+cleanbazel() {
+  rm -rf ~/Users/usuario/bazel-local-cache
+  echo "Removed bazel cache."
+}
+
+gotochat() {
+  cd ~/Projects/ios-rappi-main/libraries/Chat/Chat_Example
+}
+
+gotorappi() {
+  cd ~/Projects/ios-rappi-main/apps/Grability
+}
+
 
 ### Starship - https://github.com/starship/starship
 eval "$(starship init zsh)"
