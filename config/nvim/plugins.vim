@@ -7,7 +7,6 @@ Plug 'christoomey/vim-tmux-navigator' " Switch between tabs
 Plug 'easymotion/vim-easymotion' " play around with this
 Plug 'jiangmiao/auto-pairs' " Auto pairs for '(' '[' '{'
 Plug 'itchyny/lightline.vim' " Nicer status bar
-Plug 'airblade/vim-gitgutter' " Git +-
 Plug 'vim-airline/vim-airline' " Status bar helper
 Plug 'tpope/vim-fugitive' " Git helper
 Plug 'tpope/vim-commentary' " Easier comments - gcc
