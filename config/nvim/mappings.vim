@@ -1,5 +1,13 @@
 " I hate escape more than anything else
-inoremap jk <Esc>
+inoremap jj <Esc>
+
+" Go to the beginning of the line
+nmap <C-a> <ESC>^
+imap <C-a> <ESC>I
+
+" Go to the end of the line
+nmap <C-e> <ESC>$
+imap <C-e> <ESC>A
 
 " TAB in general mode will move to next buffer
 nnoremap <TAB> :bnext<CR>

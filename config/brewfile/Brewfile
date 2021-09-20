@@ -18,6 +18,8 @@ brew tokei
 
 ### Cask
 cask periphery
+tap homebrew/cask-fonts
+cask font-hack-nerd-font
 
 ### AppStore
 appstore 1575220747  Bakery       (2.10)
