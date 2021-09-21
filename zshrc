@@ -38,10 +38,21 @@ cleands() {
   echo "Removed DS_Stores"
 }
 
+## Git
+gitdiscard() {
+  git clean -d -f . # deletes all local current untracked files
+  git reset --hard # discards local changes
+}
+
 gitdestroy() {
   git prune
   git clean -d -f . # deletes all local current untracked files
   git reset --hard # discards local changes
+}
+
+ztash() {
+  readonly name=${1:?"You must specify a name for the stash to apply"}
+  git stash apply stash^{/${name}} 
 }
 
 ## Local
