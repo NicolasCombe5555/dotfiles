@@ -14,11 +14,23 @@
 [alias]
 	conflictPull = "pull --no-commit" # origin branchName
 [alias]
-  d = "diff HEAD"
+	s = "status"
 [alias]
-  c = "commit -am" # name as argument
+	a = "add --patch"
 [alias]
-  stashm = "stash -m" # name as argument
+	ds = "diff --staged"
+[alias]
+	d = "diff HEAD"
+[alias]
+	c = "commit -am" # name as argument
+[alias]
+	cm = "commit -m" # name as argument
+[alias]
+	f = "fetch"
+[alias]
+	bd = "branch -d" # name as argument
+[alias]
+ 	stashm = "stash -m" # name as argument
 [alias]
 	unwatch = "update-index --assume-unchanged" # with file as argument
 [alias]
