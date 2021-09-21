@@ -9,6 +9,7 @@ Plug 'jiangmiao/auto-pairs' " Auto pairs for '(' '[' '{'
 Plug 'itchyny/lightline.vim' " Nicer status bar
 Plug 'vim-airline/vim-airline' " Status bar helper
 Plug 'tpope/vim-fugitive' " Git helper
+Plug 'tpope/vim-rhubarb' " Github browser
 Plug 'tpope/vim-commentary' " Easier comments - gcc
 Plug 'ryanoasis/vim-devicons' " Icons
 Plug 'yggdroot/indentline' " Shows indentation
