@@ -5,6 +5,7 @@ brew alacritty
 brew bat
 brew exa
 brew fd
+brew figlet
 brew git-delta
 brew httpie
 brew mas

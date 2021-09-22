@@ -13,6 +13,7 @@ let g:which_key_use_floating_win = 0
 let g:which_key_map =  {}
 
 " Single mappings
+let g:which_key_map['/']  = [ 'gcc'                       , 'comment' ]
 let g:which_key_map['w']  = [ ':w'                        , 'write' ]
 let g:which_key_map['q']  = [ ':q'                        , 'quit' ]
 let g:which_key_map['nt'] = [ ':NERDTreeFind'             , 'nerd tree' ]
