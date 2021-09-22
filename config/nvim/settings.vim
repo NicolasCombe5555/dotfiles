@@ -8,7 +8,4 @@ hi MatchParen ctermbg=white ctermfg=black
 
 au! BufWritePost $MYVIMRC source % " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
-let mapleader=" "
 
-nmap <Leader>w :w<CR>
-nmap <Leader>q :q<CR>

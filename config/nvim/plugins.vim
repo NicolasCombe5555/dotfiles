@@ -15,21 +15,8 @@ Plug 'ryanoasis/vim-devicons' " Icons
 Plug 'yggdroot/indentline' " Shows indentation
 Plug 'junegunn/fzf' " Find  things
 Plug 'junegunn/fzf.vim' " Find  things
+Plug 'liuchengxu/vim-which-key' " Remember leader + mappings
 
 call plug#end()
 
 let NERDTreeQuitOnOpen=1
-
-" Easymotion
-nmap <Leader>s <Plug>(easymotion-s2)
-
-" Nerdtree
-nmap <Leader>nt :NERDTreeFind<CR>
-
-" Fugitive
-nmap <Leader>gs :G<CR>
-
-" Fzf
-nmap <Leader>ff :GFiles<CR>
-nmap <Leader>fc :Commits<CR>
-nmap <Leader>rg :Rg! 
