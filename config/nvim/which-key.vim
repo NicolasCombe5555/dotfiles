@@ -22,6 +22,7 @@ let g:which_key_map['nt'] = [ ':NERDTreeFind'             , 'nerd tree' ]
 let g:which_key_map.g = {
       \ 'name' : '+git',
       \ 's' : [':G'      		, 'fugitive'],
+      \ 'b' : [':Git blame'      	, 'blame'],
       \ }
 
 " s is for search
