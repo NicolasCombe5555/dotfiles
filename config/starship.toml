@@ -1,5 +1,29 @@
-[git_branch]
-symbol = "🦖 "
+# https://starship.rs/config/
 
 [swift]
 symbol = "🐙 "
+
+### Battery
+[battery]
+discharging_symbol = "💀 "
+
+[[battery.display]]
+threshold = 20
+style = "bold red"
+
+### Git
+[git_branch]
+symbol = "🦖 "
+
+[git_status]
+up_to_date = "✅"
+stashed = "📦"
+modified = "📝"
+conflicted = "🚧"
+renamed = "🏹"
+deleted = "🗑"
+untracked = "🤷"
+ahead = "🏎💨${count}"
+behind = "😰${count}"
+staged = '[++\($count\)](green)'
+diverged = "😵⇡${ahead_count}⇣${behind_count}"
