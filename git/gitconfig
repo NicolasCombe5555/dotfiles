@@ -7,50 +7,29 @@
 ### Aliases
 [alias]
 	leaderboard = "shortlog -s -n"
-[alias]
 	undo = "reset --soft HEAD~1"
-[alias]
 	punch = "push --force-with-lease"
-[alias]
 	conflictPull = "pull --no-commit" # origin branchName
-[alias]
 	s = "status"
-[alias]
 	a = "add --patch"
-[alias]
 	ds = "diff --staged"
-[alias]
 	d = "diff HEAD"
-[alias]
 	c = "commit -am" # name as argument
-[alias]
 	cm = "commit -m" # name as argument
-[alias]
 	f = "fetch"
-[alias]
 	l = "log --oneline"
-[alias]
 	b = "checkout -b" # name as argument
-[alias]
 	bv = "branch --verbose"
-[alias]
 	bd = "branch -d" # name as argument
-[alias]
  	stashm = "stash -m" # name as argument
-[alias]
 	unwatch = "update-index --assume-unchanged" # with file as argument
-[alias]
 	watch = "update-index --no-assume-unchanged" # with file as argument
-[alias]
 	unwatched = "!git ls-files -v | grep '^[[:lower:]]'"
-[alias]
 	watchall = "!git unwatched | xargs -L 1 -I % sh -c 'git watch `echo % | cut -c 2-`'"
-[alias]
 	listNotDeleted = "!git branch -r --merged | grep -v '\\*\\|master\\|develop' | sed 's/origin\\///'"
-[alias]
-	staleBranches = "for-each-ref --sort=-committerdate refs/heads/ refs/remotes --format='%(authordate:short) %(authorname) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))'"
-[alias]
 	cleanup = "branch -r --merged | grep -v '\\*\\|master\\|develop' | sed 's/origin\\///' | xargs -n 1 git push --delete origin"
+	
+	staleBranches = "for-each-ref --sort=-committerdate refs/heads/ refs/remotes --format='%(authordate:short) %(authorname) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))'"
 
 ### Default configs
 [fetch]
