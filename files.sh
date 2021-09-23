@@ -1,7 +1,7 @@
 sourcePaths=(
   "zshrc"
   "tmux.conf"
-  "git/gitconfig"
+  "git/.gitconfig"
   "git/gitconfig-dev"
   "git/gitconfig-work"
   "config/starship.toml"
