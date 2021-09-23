@@ -10,6 +10,9 @@
 	undo = "reset --soft HEAD~1"
 	punch = "push --force-with-lease"
 	conflictPull = "pull --no-commit" # origin branchName
+ 	stashm = "stash -m" # name as argument
+	changes = "diff HEAD --stat" # can do --shortstat as well
+	renamed = "diff HEAD --summary"
 	s = "status"
 	a = "add --patch"
 	ds = "diff --staged"
@@ -21,7 +24,6 @@
 	b = "checkout -b" # name as argument
 	bv = "branch --verbose"
 	bd = "branch -d" # name as argument
- 	stashm = "stash -m" # name as argument
 	unwatch = "update-index --assume-unchanged" # with file as argument
 	watch = "update-index --no-assume-unchanged" # with file as argument
 	unwatched = "!git ls-files -v | grep '^[[:lower:]]'"
