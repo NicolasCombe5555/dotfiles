@@ -36,6 +36,8 @@
 	prune = true
 [pull]
 	rebase = false
+[core]
+	editor = "nvim"
 
 ### https://github.com/dandavison/delta
 [pager]
