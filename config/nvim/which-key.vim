@@ -16,7 +16,8 @@ let g:which_key_map =  {}
 let g:which_key_map['/']  = [ 'gcc'                       , 'comment' ]
 let g:which_key_map['w']  = [ ':w'                        , 'write' ]
 let g:which_key_map['q']  = [ ':q'                        , 'quit' ]
-let g:which_key_map['nt'] = [ ':NERDTreeFind'             , 'nerd tree' ]
+let g:which_key_map['k']  = [ ':m .-2 <CR>=='             , 'mv line up' ]
+let g:which_key_map['j']  = [ ':m .+1 <CR>=='             , 'mv line down' ]
 
 " g is for git
 let g:which_key_map.g = {
