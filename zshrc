@@ -10,7 +10,6 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 ZSH_TMUX_AUTOSTART=true
 
 plugins=(
-  git
   tmux
   zsh-autosuggestions
 )
