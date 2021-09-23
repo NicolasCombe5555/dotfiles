@@ -17,7 +17,7 @@
 	c = "commit -am" # name as argument
 	cm = "commit -m" # name as argument
 	f = "fetch"
-	l = "log --oneline"
+	l = "log --oneline -n 10"
 	b = "checkout -b" # name as argument
 	bv = "branch --verbose"
 	bd = "branch -d" # name as argument
