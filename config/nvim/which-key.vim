@@ -24,6 +24,8 @@ let g:which_key_map.g = {
       \ 'name' : '+git',
       \ 's' : [':G'      		, 'fugitive'],
       \ 'b' : [':Git blame'      	, 'blame'],
+      \ 'f' : [':diffget //3'      	, 'take left'],
+      \ 'j' : [':diffget //2'      	, 'take right'],
       \ }
 
 " s is for search
