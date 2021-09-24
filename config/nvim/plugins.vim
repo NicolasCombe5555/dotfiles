@@ -16,7 +16,7 @@ Plug 'yggdroot/indentline' " Shows indentation
 Plug 'junegunn/fzf' " Find  things
 Plug 'junegunn/fzf.vim' " Find  things
 Plug 'liuchengxu/vim-which-key' " Remember leader + mappings
-Plug 'cespare/vim-toml' " .toml hi
+Plug 'sheerun/vim-polyglot' " hi
 Plug 'mhinz/vim-startify'
 
 call plug#end()
