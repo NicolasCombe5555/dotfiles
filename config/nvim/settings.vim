@@ -9,5 +9,3 @@ hi MatchParen ctermbg=white ctermfg=black
 
 au! BufWritePost $MYVIMRC source % " Auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 au FileType * set fo-=o " Avoid annoying " if creating new lines after a comment
-
-
