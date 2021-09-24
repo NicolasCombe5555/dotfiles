@@ -7,6 +7,6 @@ hi LineNr ctermfg=grey
 hi MatchParen ctermbg=white ctermfg=black
 
 au! BufWritePost $MYVIMRC source % " Auto source when writing to init.vm alternatively you can run :source $MYVIMRC
-au FileType * set fo-=c fo-=r fo-=o " Avoid annoying " if creating new lines after a comment
+au FileType * set fo-=o " Avoid annoying " if creating new lines after a comment
 
 
