@@ -16,6 +16,7 @@ let g:which_key_map =  {}
 let g:which_key_map['/']  = [ 'gcc'                       , 'comment' ]
 let g:which_key_map['w']  = [ ':w'                        , 'write' ]
 let g:which_key_map['q']  = [ ':q'                        , 'quit' ]
+let g:which_key_map['Q']  = [ ':q!'                       , 'quit!' ]
 let g:which_key_map['k']  = [ ':m .-2 <CR>=='             , 'mv line up' ]
 let g:which_key_map['j']  = [ ':m .+1 <CR>=='             , 'mv line down' ]
 
@@ -24,8 +25,8 @@ let g:which_key_map.g = {
       \ 'name' : '+git',
       \ 's' : [':G'      		, 'fugitive'],
       \ 'b' : [':Git blame'      	, 'blame'],
-      \ 'f' : [':diffget //3'      	, 'take left'],
-      \ 'j' : [':diffget //2'      	, 'take right'],
+      \ 'f' : [':diffget //2'      	, 'take left'],
+      \ 'j' : [':diffget //3'      	, 'take right'],
       \ }
 
 " s is for search

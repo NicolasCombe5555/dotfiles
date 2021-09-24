@@ -2,6 +2,7 @@ set number " Line numbers
 set relativenumber
 set mouse=a " Enable your mouse
 set clipboard=unnamedplus " Copy paste between vim and everything else
+set termguicolors
 
 hi LineNr ctermfg=grey
 hi MatchParen ctermbg=white ctermfg=black
