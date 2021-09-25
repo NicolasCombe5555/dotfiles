@@ -11,6 +11,7 @@
 	punch = "push --force-with-lease"
 	conflictPull = "pull --no-commit" # origin branchName
  	stashm = "stash -m" # name as argument
+  seestash = "stash show -p" # number as argument
 	changes = "diff HEAD --stat" # can do --shortstat as well
 	renamed = "diff HEAD --summary"
 	s = "status"

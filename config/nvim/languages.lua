@@ -2,7 +2,7 @@
 
 -- Swift
 require'lspconfig'.sourcekit.setup{
-	serverPath = '/Applications/Xcode-System.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp',
+	serverPath = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp',
 	filetypes = {'swift'}
 }
 
