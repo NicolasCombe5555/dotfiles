@@ -14,8 +14,7 @@ Plug 'junegunn/fzf.vim' -- Find  things
 Plug 'christoomey/vim-tmux-navigator' -- Switch between tabs
 
 Plug 'morhetz/gruvbox' -- colorscheme
-Plug 'vim-airline/vim-airline' -- status bar helper
-Plug 'vim-airline/vim-airline-themes' -- status bar themes
+Plug 'itchyny/lightline.vim' -- status bar
 Plug 'ryanoasis/vim-devicons' -- Icons
 
 Plug 'tpope/vim-fugitive' -- Git helper

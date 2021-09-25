@@ -6,8 +6,16 @@ set clipboard=unnamedplus " Copy paste between vim and everything else
 au! BufWritePost $MYVIMRC source % " Auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 au FileType * set fo-=o " Avoid annoying " if creating new lines after a comment
 
-""" Airline
-let g:airline_theme='fruit punch'
+""" Status bar
+let g:lightline = {
+	\ 'active': {
+		\   'left': [ [ 'mode' ], [ 'gitbranch', 'filename' ] ],
+		\   'right': [ [ 'lineinfo' ], [ 'filetype', 'percent' ], [ 'fileencoding' ] ]
+	\ },
+  \ 'component_function': {
+    \   'gitbranch': 'FugitiveHead'
+  \ },
+\ }
 
 """ Colors 
 set termguicolors
