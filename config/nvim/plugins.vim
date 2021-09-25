@@ -23,6 +23,8 @@ Plug 'tpope/vim-commentary' " Easier comments
 Plug 'jiangmiao/auto-pairs' " Auto pairs for '(' '[' '{'
 Plug 'yggdroot/indentline' " Shows indentation
 
+Plug 'neovim/nvim-lspconfig' " LSP
+
 call plug#end()
 
 let NERDTreeQuitOnOpen=1

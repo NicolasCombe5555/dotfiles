@@ -10,7 +10,9 @@ sourcePaths=(
   "config/nvim/settings.vim"
   "config/nvim/mappings.vim"
   "config/nvim/which-key.vim"
+  "config/nvim/lsp-config.vim"
   "config/nvim/start-screen.vim"
+  "config/nvim/languages.lua"
   "config/brewfile/Brewfile"
   "config/alacritty/alacritty.yml"
 )
@@ -27,7 +29,9 @@ destinationPaths=(
   "${HOME}/.config/nvim/settings.vim"
   "${HOME}/.config/nvim/mappings.vim"
   "${HOME}/.config/nvim/which-key.vim"
+  "${HOME}/.config/nvim/lsp-config.vim"
   "${HOME}/.config/nvim/start-screen.vim"
+  "${HOME}/.config/nvim/languages.lua"
   "${HOME}/.config/brewfile/Brewfile"
   "${HOME}/.config/alacritty/alacritty.yml"
 )
