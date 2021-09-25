@@ -24,6 +24,7 @@
 	b = "checkout -b" # name as argument
 	bv = "branch --verbose"
 	bd = "branch -d" # name as argument
+  bdr = "git push -d origin" # name as argument
 	unwatch = "update-index --assume-unchanged" # with file as argument
 	watch = "update-index --no-assume-unchanged" # with file as argument
 	unwatched = "!git ls-files -v | grep '^[[:lower:]]'"
