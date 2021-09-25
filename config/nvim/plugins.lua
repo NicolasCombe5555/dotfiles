@@ -4,6 +4,7 @@
 local Plug = vim.fn['plug#']
 
 vim.call('plug#begin', '~/.config/vim/plugged')
+
 Plug 'liuchengxu/vim-which-key' -- Remember leader + mappings
 
 Plug 'mhinz/vim-startify' -- Start screen
@@ -26,7 +27,6 @@ Plug 'yggdroot/indentline' -- Shows indentation
 
 Plug 'neovim/nvim-lspconfig' -- LSP
 Plug 'sheerun/vim-polyglot' -- hi
-Plug 'vim-scripts/Syntastic'
 
 Plug 'ThePrimeagen/vim-be-good' -- Practice - be fast
 

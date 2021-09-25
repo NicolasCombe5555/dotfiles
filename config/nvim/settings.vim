@@ -25,6 +25,3 @@ colorscheme gruvbox
 
 """ Nerd tree
 let NERDTreeQuitOnOpen=1
-
-""" Syntastic
-let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
