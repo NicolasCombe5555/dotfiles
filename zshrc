@@ -68,6 +68,9 @@ gotorappi() {
   cd ~/Projects/ios-rappi-main/apps/Grability
 }
 
+dotfiles() {
+  cd ~/Personal/dotfiles
+}
 
 ### Starship - https://github.com/starship/starship
 eval "$(starship init zsh)"
