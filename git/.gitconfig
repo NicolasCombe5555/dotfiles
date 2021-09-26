@@ -1,8 +1,8 @@
 ### User
 [includeIf "gitdir:~/Projects/"]
-  path = .gitconfig-work
+	path = .gitconfig-work
 [includeIf "gitdir:~/Personal/"]
-  path = .gitconfig-dev
+	path = .gitconfig-dev
 
 ### Aliases
 [alias]
@@ -10,8 +10,8 @@
 	undo = "reset --soft HEAD~1"
 	punch = "push --force-with-lease"
 	conflictPull = "pull --no-commit" # origin branchName
- 	stashm = "stash -m" # name as argument
-  seestash = "stash show -p" # number as argument
+	stashm = "stash -m" # name as argument
+	seestash = "stash show -p" # number as argument
 	changes = "diff HEAD --stat" # can do --shortstat as well
 	renamed = "diff HEAD --summary"
 	s = "status"
@@ -26,14 +26,14 @@
 	b = "checkout -b" # name as argument
 	bv = "branch --verbose"
 	bd = "branch -d" # name as argument
-  bdr = "git push -d origin" # name as argument
+	bdr = "git push -d origin" # name as argument
 	unwatch = "update-index --assume-unchanged" # with file as argument
 	watch = "update-index --no-assume-unchanged" # with file as argument
 	unwatched = "!git ls-files -v | grep '^[[:lower:]]'"
 	watchall = "!git unwatched | xargs -L 1 -I % sh -c 'git watch `echo % | cut -c 2-`'"
 	listNotDeleted = "!git branch -r --merged | grep -v '\\*\\|master\\|develop' | sed 's/origin\\///'"
 	cleanup = "branch -r --merged | grep -v '\\*\\|master\\|develop' | sed 's/origin\\///' | xargs -n 1 git push --delete origin"
-	
+
 	staleBranches = "for-each-ref --sort=-committerdate refs/heads/ refs/remotes --format='%(authordate:short) %(authorname) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))'"
 
 ### Default configs
@@ -46,23 +46,23 @@
 
 ### https://github.com/dandavison/delta
 [pager]
-  diff = delta
-  log = delta
-  reflog = delta
-  show = delta
+	diff = delta
+	log = delta
+	reflog = delta
+	show = delta
 
 [interactive]
-  diffFilter = delta --color-only --features=interactive
+	diffFilter = delta --color-only --features=interactive
 
 [delta]
-  features = decorations
-  line-numbers = true
-  side-by-side = true
+	features = decorations
+	line-numbers = true
+	side-by-side = true
 
 [delta "decorations"]
-  commit-style = raw
-  commit-decoration-style = blue ol
-  file-style = omit
-  file-decoration-style = none
-  hunk-header-style = file syntax
-  hunk-header-file-style = red
+	commit-style = raw
+	commit-decoration-style = blue ol
+	file-style = omit
+	file-decoration-style = none
+	hunk-header-style = file syntax
+	hunk-header-file-style = red
