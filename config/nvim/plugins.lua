@@ -20,6 +20,8 @@ Plug 'ryanoasis/vim-devicons' -- Icons
 
 Plug 'tpope/vim-fugitive' -- Git helper
 Plug 'tpope/vim-rhubarb' -- Github browser
+Plug 'nvim-lua/plenary.nvim' -- dependency for gitsigns
+Plug 'lewis6991/gitsigns.nvim' 
 
 Plug 'tpope/vim-commentary' -- Easier comments
 Plug 'jiangmiao/auto-pairs' -- Auto pairs for '(' '[' '{'
@@ -36,3 +38,7 @@ Plug 'folke/trouble.nvim' -- Diagnostics
 Plug 'ThePrimeagen/vim-be-good' -- Practice - be fast
 
 vim.call('plug#end')
+
+
+-- Setup
+require('gitsigns').setup()
