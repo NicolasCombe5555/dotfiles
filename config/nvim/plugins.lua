@@ -17,6 +17,8 @@ Plug 'christoomey/vim-tmux-navigator' -- Switch between tabs
 Plug 'morhetz/gruvbox' -- colorscheme
 Plug 'itchyny/lightline.vim' -- status bar
 Plug 'ryanoasis/vim-devicons' -- Icons
+Plug 'kyazdani42/nvim-web-devicons' -- icons for barbar
+Plug 'romgrk/barbar.nvim' -- tabtab
 
 Plug 'tpope/vim-fugitive' -- Git helper
 Plug 'tpope/vim-rhubarb' -- Github browser
@@ -41,4 +43,6 @@ vim.call('plug#end')
 
 
 -- Setup
-require('gitsigns').setup()
+require('gitsigns').setup {
+   keymaps = {}
+}
