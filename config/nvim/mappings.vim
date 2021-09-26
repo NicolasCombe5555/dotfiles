@@ -9,11 +9,6 @@ imap <C-a> <ESC>I
 nmap <C-e> <ESC>$
 imap <C-e> <ESC>A
 
-" TAB in general mode will move to next buffer
-nnoremap <TAB> :bnext<CR>
-" SHIFT-TAB will go back
-nnoremap <S-TAB> :bprevious<CR>
-
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
 
