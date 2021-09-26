@@ -6,7 +6,7 @@ for ((idx=0; idx < ${#sourcePaths[@]}; ++idx)); do
   sp="${sourcePaths[$idx]}"
   dp="${destinationPaths[$idx]}"
 
-  mkdir -p $(dirname ${dp}) && cp ${sp} ${dp}
+  mkdir -p "$(dirname "${dp}")" && cp "${sp}" "${dp}"
 
   echo "Copied to ${destinationPaths[$idx]} successfully."
 done

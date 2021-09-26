@@ -6,7 +6,7 @@ for ((idx=0; idx < ${#sourcePaths[@]}; ++idx)); do
   sp="${sourcePaths[$idx]}"
   dp="${destinationPaths[$idx]}"
 
-  cp ${dp} ${sp}
+  cp "${dp}" "${sp}"
 
   echo "Updated ${sourcePaths[$idx]} successfully."
 done

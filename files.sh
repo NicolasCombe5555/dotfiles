@@ -1,37 +1,45 @@
 sourcePaths=(
   "zshrc"
-  "tmux.conf"
+  "config/starship.toml"
+  "config/brewfile/Brewfile"
+  "config/alacritty/alacritty.yml"
+
   "git/.gitconfig"
   "git/gitconfig-dev"
   "git/gitconfig-work"
-  "config/starship.toml"
+
+  "tmux/tmux.conf"
+  "tmux/tmux_startup.sh"
+
   "config/nvim/init.vim"
   "config/nvim/plugins.lua"
+  "config/nvim/languages.lua"
   "config/nvim/settings.vim"
   "config/nvim/mappings.vim"
   "config/nvim/which-key.vim"
   "config/nvim/lsp-config.vim"
   "config/nvim/start-screen.vim"
-  "config/nvim/languages.lua"
-  "config/brewfile/Brewfile"
-  "config/alacritty/alacritty.yml"
 )
 
 destinationPaths=(
   "${HOME}/.zshrc"
-  "${HOME}/.tmux.conf"
+  "${HOME}/.config/starship.toml"
+  "${HOME}/.config/brewfile/Brewfile"
+  "${HOME}/.config/alacritty/alacritty.yml"
+
   "${HOME}/.gitconfig"
   "${HOME}/.gitconfig-dev"
   "${HOME}/.gitconfig-work"
-  "${HOME}/.config/starship.toml"
+
+  "${HOME}/.tmux.conf"
+  "${HOME}/tmux_startup.sh"
+
   "${HOME}/.config/nvim/init.vim"
   "${HOME}/.config/nvim/plugins.lua"
+  "${HOME}/.config/nvim/languages.lua"
   "${HOME}/.config/nvim/settings.vim"
   "${HOME}/.config/nvim/mappings.vim"
   "${HOME}/.config/nvim/which-key.vim"
   "${HOME}/.config/nvim/lsp-config.vim"
   "${HOME}/.config/nvim/start-screen.vim"
-  "${HOME}/.config/nvim/languages.lua"
-  "${HOME}/.config/brewfile/Brewfile"
-  "${HOME}/.config/alacritty/alacritty.yml"
 )
