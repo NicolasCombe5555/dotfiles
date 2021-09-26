@@ -19,6 +19,7 @@ let g:which_key_map['q']  = [ ':q'                        , 'quit' ]
 let g:which_key_map['Q']  = [ ':q!'                       , 'quit!' ]
 let g:which_key_map['k']  = [ ':m .-2 <CR>=='             , 'mv line up' ]
 let g:which_key_map['j']  = [ ':m .+1 <CR>=='             , 'mv line down' ]
+let g:which_key_map['x']  = [ ':TroubleToggle'            , 'show warnings']
 
 " g is for git
 let g:which_key_map.g = {
