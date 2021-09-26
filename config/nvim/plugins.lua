@@ -44,5 +44,5 @@ vim.call('plug#end')
 
 -- Setup
 require('gitsigns').setup {
-   keymaps = {}
+	keymaps = {}
 }
