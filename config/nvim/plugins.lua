@@ -27,6 +27,7 @@ Plug 'yggdroot/indentline' -- Shows indentation
 
 Plug 'neovim/nvim-lspconfig' -- LSP
 Plug 'sheerun/vim-polyglot' -- hi
+Plug 'hrsh7th/nvim-compe' -- Completions
 
 Plug 'ThePrimeagen/vim-be-good' -- Practice - be fast
 

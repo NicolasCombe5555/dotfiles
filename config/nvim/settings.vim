@@ -1,8 +1,14 @@
-set number " Line numbers
+" Line numbers
+set number 
 set relativenumber
-set mouse=a " Enable your mouse
-set clipboard=unnamedplus " Copy paste between vim and everything else
+
+" Better search
+set ignorecase
+set smartcase
+
 set noshowmode
+set clipboard=unnamedplus " Copy paste between vim and everything else
+set mouse=a " Enable your mouse
 
 au! BufWritePost $MYVIMRC source % " Auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 au FileType * set fo-=o " Avoid annoying " if creating new lines after a comment
