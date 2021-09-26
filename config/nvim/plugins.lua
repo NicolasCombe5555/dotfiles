@@ -9,7 +9,6 @@ Plug 'liuchengxu/vim-which-key' -- Remember leader + mappings
 
 Plug 'mhinz/vim-startify' -- Start screen
 Plug 'scrooloose/nerdtree' -- File Explorer
-Plug 'easymotion/vim-easymotion' -- Searching
 Plug 'junegunn/fzf' -- Find  things
 Plug 'junegunn/fzf.vim' -- Find  things
 Plug 'christoomey/vim-tmux-navigator' -- Switch between tabs
