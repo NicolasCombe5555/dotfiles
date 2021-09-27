@@ -60,5 +60,23 @@ let g:which_key_map.f = {
             \ 'z' : [':FZF'                     , 'FZF']
             \ }
 
+" z is for window because I already have w for write
+let g:which_key_map.z = {
+            \ 'name' : '+windows',
+            \ 'q' : ['<C-W>o'      , 'close all windows but current'],
+            \ 'd' : ['<C-W>c'      , 'delete-window'],
+            \ '2' : ['<C-W>v'      , 'layout-double-columns'],
+            \ 'h' : ['<C-W>h'      , 'window-left'],
+            \ 'j' : ['<C-W>j'      , 'window-below'],
+            \ 'k' : ['<C-W>k'      , 'window-up'],
+            \ 'l' : ['<C-W>l'      , 'window-right'],
+            \ 'H' : ['<C-W>5<'     , 'expand-window-left'],
+            \ 'J' : [':resize +5'  , 'expand-window-below'],
+            \ 'K' : [':resize -5'  , 'expand-window-up'],
+            \ 'L' : ['<C-W>5>'     , 'expand-window-right'],
+            \ '-' : ['<C-W>s'      , 'split-window-below'],
+            \ '|' : ['<C-W>v'      , 'split-window-right']
+            \ }
+
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")

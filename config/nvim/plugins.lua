@@ -33,7 +33,7 @@ Plug 'neovim/nvim-lspconfig' -- LSP
 Plug 'sheerun/vim-polyglot' -- hi
 Plug 'hrsh7th/nvim-compe' -- Completions
 
-Plug 'iamcco/diagnostic-languageserver' -- npm install -g diagnostic-languageserver
+Plug 'iamcco/diagnostic-languageserver' -- npm i -g diagnostic-languageserver
 Plug 'creativenull/diagnosticls-configs-nvim' -- Linters
 Plug 'folke/trouble.nvim' -- Diagnostics
 
