@@ -34,6 +34,3 @@ let g:lightline = {
 set termguicolors
 set background=dark
 colorscheme gruvbox
-
-""" Nerd tree
-let NERDTreeQuitOnOpen=1

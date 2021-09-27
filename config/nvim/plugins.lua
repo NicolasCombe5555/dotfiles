@@ -11,6 +11,7 @@ Plug 'mhinz/vim-startify' -- Start screen
 Plug 'scrooloose/nerdtree' -- File Explorer
 Plug 'junegunn/fzf' -- Find  things
 Plug 'junegunn/fzf.vim' -- Find  things
+Plug 'airblade/vim-rooter' -- Helper to root to git root
 Plug 'christoomey/vim-tmux-navigator' -- Switch between tabs
 
 Plug 'morhetz/gruvbox' -- colorscheme

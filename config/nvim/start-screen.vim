@@ -6,15 +6,7 @@ let g:startify_custom_header = [
 \]
 
 let g:startify_lists = [
-          \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
-          \ { 'type': 'dir',       'header': ['   Current Directory '. getcwd()] },
           \ { 'type': 'files',     'header': ['   Files']            },
           \ ]
-
-let g:startify_bookmarks = [
-            \ { 'g': '~/.gitconfig' },
-            \ { 'z': '~/.zshrc' },
-            \ '~/.config/nvim',
-            \ ]
 
 let g:startify_enable_special = 0

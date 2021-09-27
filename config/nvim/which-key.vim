@@ -49,13 +49,14 @@ let g:which_key_map.g = {
 " f is for find
 let g:which_key_map.f = {
             \ 'name' : '+find',
-            \ 'c' : [':Commits'                 , 'commits'],
-            \ 'C' : [':BCommits'            	, 'buffer commits'],
+            \ 'l' : [':BLines'                  , 'current buffer lines'],
+            \ 't' : [':Rg'          	        , 'text Rg'],
             \ 'f' : [':Files'               	, 'files'],
             \ 'g' : [':GFiles'              	, 'git files'],
             \ 'G' : [':GFiles?'                 , 'modified git files'],
+            \ 'c' : [':Commits'                 , 'commits'],
+            \ 'C' : [':BCommits'            	, 'buffer commits'],
             \ 'H' : [':History:'                , 'command history'],
-            \ 't' : [':Rg!'          	        , 'text Rg'],
             \ 'z' : [':FZF'                     , 'FZF']
             \ }
 
