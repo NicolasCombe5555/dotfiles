@@ -14,7 +14,7 @@ Plug 'junegunn/fzf.vim' -- Find  things
 Plug 'airblade/vim-rooter' -- Helper to root to git root
 Plug 'christoomey/vim-tmux-navigator' -- Switch between tabs
 
-Plug 'morhetz/gruvbox' -- colorscheme
+Plug 'gruvbox-community/gruvbox' -- colorscheme
 Plug 'itchyny/lightline.vim' -- status bar
 Plug 'ryanoasis/vim-devicons' -- Icons
 Plug 'kyazdani42/nvim-web-devicons' -- icons for barbar
