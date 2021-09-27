@@ -5,9 +5,10 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin', '~/.config/vim/plugged')
 
-Plug 'liuchengxu/vim-which-key' -- Remember leader + mappings
 
+Plug 'liuchengxu/vim-which-key' -- Remember leader + mappings
 Plug 'mhinz/vim-startify' -- Start screen
+
 Plug 'scrooloose/nerdtree' -- File Explorer
 Plug 'junegunn/fzf' -- Find  things
 Plug 'junegunn/fzf.vim' -- Find  things
@@ -23,7 +24,7 @@ Plug 'romgrk/barbar.nvim' -- tabtab
 Plug 'tpope/vim-fugitive' -- Git helper
 Plug 'tpope/vim-rhubarb' -- Github browser
 Plug 'nvim-lua/plenary.nvim' -- dependency for gitsigns
-Plug 'lewis6991/gitsigns.nvim' 
+Plug 'lewis6991/gitsigns.nvim' -- Git signs
 
 Plug 'tpope/vim-commentary' -- Easier comments
 Plug 'jiangmiao/auto-pairs' -- Auto pairs for '(' '[' '{'
@@ -39,10 +40,12 @@ Plug 'folke/trouble.nvim' -- Diagnostics
 
 Plug 'ThePrimeagen/vim-be-good' -- Practice - be fast
 
+
 vim.call('plug#end')
+
 
 
 -- Setup
 require('gitsigns').setup {
-	keymaps = {}
+    keymaps = {}
 }

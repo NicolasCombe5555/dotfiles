@@ -6,6 +6,7 @@ brew bat
 brew exa
 brew fd
 brew figlet
+brew fzf
 brew git-delta
 brew mas
 brew neovim
@@ -17,9 +18,11 @@ brew tmux
 brew tokei
 
 ### Cask
-cask periphery
 tap homebrew/cask-fonts
 cask font-hack-nerd-font
+
+tap peripheryapp/periphery
+cask periphery
 
 ### AppStore
 appstore 1575220747  Bakery       (2.10)
