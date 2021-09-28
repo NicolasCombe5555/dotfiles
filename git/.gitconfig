@@ -4,38 +4,42 @@
 [includeIf "gitdir:~/Personal/"]
     path = .gitconfig-dev
 
+
 ### Aliases
 [alias]
-    leaderboard = "shortlog -s -n"
-    undo = "reset --soft HEAD~1"
-    punch = "push --force-with-lease"
-    conflictPull = "pull --no-commit" # origin branchName
-    stashm = "stash -m" # name as argument
-    seestash = "stash show -p" # number as argument
-    changes = "diff HEAD --stat" # can do --shortstat as well
-    renamed = "diff HEAD --summary"
-    check = "checkout"
-    s = "status -s"
     a = "add --patch"
-    ds = "diff --staged"
-    d = "diff HEAD"
-    c = "commit -am" # name as argument
-    cm = "commit -m" # name as argument
-    f = "fetch"
-    p = "pull"
-    l = "log --oneline -n 10"
     b = "checkout -b" # name as argument
-    bv = "branch --verbose"
     bd = "branch -d" # name as argument
     bdr = "git push -d origin" # name as argument
+    bv = "branch --verbose"
+    c = "commit -am" # name as argument
+    changes = "diff HEAD --stat" # can do --shortstat as well
+    check = "checkout"
+    cm = "commit -m" # name as argument
+    conflictPull = "pull --no-commit" # origin branchName
+    d = "diff HEAD"
+    ds = "diff --staged"
+    dtool = "difftool"
+    f = "fetch"
+    l = "log --oneline -n 10"
+    leaderboard = "shortlog -s -n"
+    p = "pull"
+    punch = "push --force-with-lease"
+    undo = "reset --soft HEAD~1"
+    renamed = "diff HEAD --summary"
+    s = "status -s"
+    seestash = "stash show -p" # number as argument
+    stashm = "stash -m" # name as argument
     unwatch = "update-index --assume-unchanged" # with file as argument
     watch = "update-index --no-assume-unchanged" # with file as argument
+
+[alias] # Scripts
+    cleanup = "branch -r --merged | grep -v '\\*\\|master\\|develop' | sed 's/origin\\///' | xargs -n 1 git push --delete origin"
+    listNotDeleted = "!git branch -r --merged | grep -v '\\*\\|master\\|develop' | sed 's/origin\\///'"
+    staleBranches = "for-each-ref --sort=-committerdate refs/heads/ refs/remotes --format='%(authordate:short) %(authorname) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))'"
     unwatched = "!git ls-files -v | grep '^[[:lower:]]'"
     watchall = "!git unwatched | xargs -L 1 -I % sh -c 'git watch `echo % | cut -c 2-`'"
-    listNotDeleted = "!git branch -r --merged | grep -v '\\*\\|master\\|develop' | sed 's/origin\\///'"
-    cleanup = "branch -r --merged | grep -v '\\*\\|master\\|develop' | sed 's/origin\\///' | xargs -n 1 git push --delete origin"
 
-    staleBranches = "for-each-ref --sort=-committerdate refs/heads/ refs/remotes --format='%(authordate:short) %(authorname) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))'"
 
 ### Default configs
 [fetch]
@@ -49,6 +53,13 @@
     colorMoved = default
 [difftool]
     prompt = false
+[merge]
+    tool = "nvim"
+[mergetool]
+    prompt = false
+    keepBackup = false
+[mergetool "nvim"]
+    cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
 
 ### https://github.com/dandavison/delta
 [pager]

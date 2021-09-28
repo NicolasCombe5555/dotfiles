@@ -47,7 +47,7 @@ gitdiscard() {
   git reset --hard # discards local changes
 }
 
-gitdestroy() {
+gitpurge() {
   git prune
   git clean -d -f . # deletes all local current untracked files
   git reset --hard # discards local changes
