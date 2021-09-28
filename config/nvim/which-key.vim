@@ -42,6 +42,7 @@ let g:which_key_map.g = {
             \ 'r' : [':Gitsigns reset_hunk'                 , 'resets hunk'],
             \ 'a' : [':Gitsigns stage_hunk'                 , 'stages hunk'],
             \ 'u' : [':Gitsigns undo_stage_hunk'            , 'unstages hunk'],
+            \ 'g' : [':cq'                				    , 'quit difftool file'],
             \ 'f' : [':diffget //2'      				    , 'take left'],
             \ 'j' : [':diffget //3'      				    , 'take right'],
             \ }
