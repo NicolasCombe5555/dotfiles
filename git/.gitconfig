@@ -14,7 +14,7 @@
     seestash = "stash show -p" # number as argument
     changes = "diff HEAD --stat" # can do --shortstat as well
     renamed = "diff HEAD --summary"
-    s = "status"
+    s = "status -s"
     a = "add --patch"
     ds = "diff --staged"
     d = "diff HEAD"
@@ -43,6 +43,8 @@
     rebase = false
 [core]
     editor = "nvim"
+[diff]
+    colorMoved = default
 
 ### https://github.com/dandavison/delta
 [pager]
