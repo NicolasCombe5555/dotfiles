@@ -11,7 +11,7 @@
     b = "checkout -b" # name as argument
     bd = "branch -d" # name as argument
     bdr = "git push -d origin" # name as argument
-    bv = "branch --verbose"
+    bv = "!git --no-pager branch --verbose"
     c = "commit -am" # name as argument
     changes = "diff HEAD --stat" # can do --shortstat as well
     check = "checkout"
@@ -27,6 +27,7 @@
     punch = "push --force-with-lease"
     undo = "reset --soft HEAD~1"
     renamed = "diff HEAD --summary"
+    renewdate = "commit --amend --reset-author --no-edit"
     s = "status -s"
     seestash = "stash show -p" # number as argument
     stashm = "stash -m" # name as argument
@@ -35,8 +36,8 @@
 
 [alias] # Scripts
     cleanup = "branch -r --merged | grep -v '\\*\\|master\\|develop' | sed 's/origin\\///' | xargs -n 1 git push --delete origin"
-    listNotDeleted = "!git branch -r --merged | grep -v '\\*\\|master\\|develop' | sed 's/origin\\///'"
-    staleBranches = "for-each-ref --sort=-committerdate refs/heads/ refs/remotes --format='%(authordate:short) %(authorname) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))'"
+    listnotdeleted = "!git branch -r --merged | grep -v '\\*\\|master\\|develop' | sed 's/origin\\///'"
+    stalebranches = "for-each-ref --sort=-committerdate refs/heads/ refs/remotes --format='%(authordate:short) %(authorname) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))'"
     unwatched = "!git ls-files -v | grep '^[[:lower:]]'"
     watchall = "!git unwatched | xargs -L 1 -I % sh -c 'git watch `echo % | cut -c 2-`'"
 
@@ -45,7 +46,7 @@
 [fetch]
     prune = true
 [pull]
-    rebase = false
+    rebase = true
 [core]
     editor = "nvim"
 [diff]
