@@ -20,9 +20,6 @@ vnoremap > >gv
 nnoremap <Leader>o o<Esc>
 nnoremap <Leader>O O<Esc>
 
-" Nerd tree
-nmap <Leader>nt :NERDTreeFind<CR>
-
 """ https://www.youtube.com/watch?v=hSHATqh8svM
 
 " Number 5: Behave Vim

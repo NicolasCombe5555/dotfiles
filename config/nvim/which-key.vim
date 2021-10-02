@@ -20,6 +20,7 @@ let g:which_key_map['Q']  = [ ':q!'                       , 'quit!' ]
 let g:which_key_map['k']  = [ ':m .-2 <CR>=='             , 'mv line up' ]
 let g:which_key_map['j']  = [ ':m .+1 <CR>=='             , 'mv line down' ]
 let g:which_key_map['x']  = [ ':TroubleToggle'            , 'show warnings']
+let g:which_key_map['n']  = [ ':NERDTreeFind'             , 'nerd tree']
 
 " barbar - goto buffer in position...
 let g:which_key_map['1']  = [ ':BufferGoto 1'                       , 'which_key_ignore' ]

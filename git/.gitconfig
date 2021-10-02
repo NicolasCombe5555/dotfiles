@@ -10,13 +10,12 @@
     a = "add --patch"
     b = "checkout -b" # name as argument
     bd = "branch -d" # name as argument
-    bdr = "git push -d origin" # name as argument
+    bdr = "push -d origin" # name as argument
     bv = "!git --no-pager branch --verbose"
     c = "commit -am" # name as argument
     changes = "diff HEAD --stat" # can do --shortstat as well
     check = "checkout"
     cm = "commit -m" # name as argument
-    conflictPull = "pull --no-commit" # origin branchName
     d = "diff HEAD"
     ds = "diff --staged"
     dtool = "difftool"
