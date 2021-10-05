@@ -3,6 +3,7 @@ set number
 set relativenumber
 
 " Better search
+set nohlsearch
 set ignorecase
 set smartcase
 
