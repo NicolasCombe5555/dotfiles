@@ -22,7 +22,6 @@ alias dog='cat -b'
 alias list='exa -a1'
 alias lsn='exa -hal'
 alias lss='exa -halSR'
-alias nn='nvim'
 
 ### Methods
 
@@ -35,10 +34,6 @@ cleandd() {
 cleands() {
   find . -name ".DS_Store" -delete
   echo "Removed DS_Stores"
-}
-
-dotfiles() {
-  cd ~/Personal/dotfiles
 }
 
 ## Git
@@ -59,19 +54,6 @@ ztash() {
 }
 
 ## Local
-cleanbazel() {
-  rm -rf ~/Users/usuario/bazel-local-cache
-  echo "Removed bazel cache."
-}
-
-gotochat() {
-  cd ~/Projects/ios-rappi-main/libraries/Chat/Chat_Example
-}
-
-gotorappi() {
-  cd ~/Projects/ios-rappi-main/apps/Grability
-}
-
 
 ### Starship - https://github.com/starship/starship
 eval "$(starship init zsh)"

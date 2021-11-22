@@ -5,8 +5,6 @@ sourcePaths=(
   "config/alacritty/alacritty.yml"
 
   "git/.gitconfig"
-  "git/gitconfig-dev"
-  "git/gitconfig-work"
 
   "tmux/tmux.conf"
   "tmux/tmux_startup.sh"
@@ -28,8 +26,6 @@ destinationPaths=(
   "${HOME}/.config/alacritty/alacritty.yml"
 
   "${HOME}/.gitconfig"
-  "${HOME}/.gitconfig-dev"
-  "${HOME}/.gitconfig-work"
 
   "${HOME}/.tmux.conf"
   "${HOME}/tmux_startup.sh"

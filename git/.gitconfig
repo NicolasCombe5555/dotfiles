@@ -1,9 +1,7 @@
 ### User
-[includeIf "gitdir:~/Projects/"]
-    path = .gitconfig-work
-[includeIf "gitdir:~/Personal/"]
-    path = .gitconfig-dev
-
+[user]
+  name = Nicolas Combe
+  email = combe98@gmail.com
 
 ### Aliases
 [alias]
