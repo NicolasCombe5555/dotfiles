@@ -9,7 +9,6 @@ brew ffmpeg
 brew figlet
 brew fzf
 brew git-delta
-brew mas
 brew neofetch
 brew neovim
 brew ripgrep
