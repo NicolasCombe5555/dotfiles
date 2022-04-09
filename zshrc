@@ -19,9 +19,6 @@ source $ZSH/oh-my-zsh.sh
 
 ### Aliases
 alias dog='cat -b'
-alias list='exa -a1'
-alias lsn='exa -hal'
-alias lss='exa -halSR'
 
 ### Methods
 
