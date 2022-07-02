@@ -8,6 +8,7 @@
     a = "add --patch"
     b = "checkout -b" # name as argument
     bd = "branch -d" # name as argument
+    bdd = "branch -D" # name as argument
     bdr = "push -d origin" # name as argument
     bv = "!git --no-pager branch --verbose"
     c = "commit -am" # name as argument
