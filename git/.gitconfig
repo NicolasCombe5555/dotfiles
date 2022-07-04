@@ -24,6 +24,7 @@
     p = "pull"
     punch = "push --force-with-lease"
     undo = "reset --soft HEAD~1"
+    rename = "branch -m" # name as argument
     renamed = "diff HEAD --summary"
     renewdate = "commit --amend --reset-author --no-edit"
     s = "status -s"
