@@ -1,8 +1,0 @@
-Host *
-  UseKeychain yes
-  AddKeysToAgent yes
-  IdentityFile ~/.ssh/generalNicolas
-
-# ssh-keygen -t ed25519
-# ssh-add generalNicolas
-# pbcopy < generalNicolas.pub 
