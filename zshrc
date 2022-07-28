@@ -18,6 +18,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 ### Aliases
+alias cdg='cd $(git rev-parse --show-toplevel)'
 alias dog='cat -b'
 
 ### Methods
