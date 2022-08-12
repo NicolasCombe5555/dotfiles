@@ -32,6 +32,7 @@
     stashm = "stash -m" # name as argument
     unwatch = "update-index --assume-unchanged" # with file as argument
     watch = "update-index --no-assume-unchanged" # with file as argument
+    _recover = "fsck --unreachable | grep commit | cut -d ' ' -f3 | xargs git log --merges --no-walk"
 
 [alias] # Scripts
     cleanup = "branch -r --merged | grep -v '\\*\\|master\\|develop' | sed 's/origin\\///' | xargs -n 1 git push --delete origin"
