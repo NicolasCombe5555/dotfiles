@@ -20,6 +20,7 @@
     dtool = "difftool"
     f = "fetch"
     l = "log --oneline -n 10"
+    lg = "log --oneline -n 10 -G" # regex as argument
     leaderboard = "shortlog -s -n"
     p = "pull"
     punch = "push --force-with-lease"
