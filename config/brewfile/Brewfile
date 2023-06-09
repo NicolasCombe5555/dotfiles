@@ -3,6 +3,7 @@
 ### Brew
 brew alacritty
 brew bat
+brew black
 brew exa
 brew fd
 brew ffmpeg
