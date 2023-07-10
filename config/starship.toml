@@ -27,3 +27,7 @@ ahead = "🏎💨${count}"
 behind = "😰${count}"
 staged = '[++\($count\)](green)'
 diverged = "😵⇡${ahead_count}⇣${behind_count}"
+
+[time]
+disabled = false
+format = '[$time ](bold yellow)'
