@@ -36,7 +36,6 @@
     _recover = "fsck --unreachable | grep commit | cut -d ' ' -f3 | xargs git log --merges --no-walk"
 
 [alias] # Scripts
-    listnotdeleted = "!git branch -r --merged | grep -v '\\*\\|master\\|develop' | sed 's/origin\\///'"
     stalebranches = "for-each-ref --sort=-committerdate refs/heads/ refs/remotes --format='%(authordate:short) %(authorname) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))'"
     unwatched = "!git ls-files -v | grep '^[[:lower:]]'"
     watchall = "!git unwatched | xargs -L 1 -I % sh -c 'git watch `echo % | cut -c 2-`'"
