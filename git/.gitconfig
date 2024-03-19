@@ -29,6 +29,7 @@
     renamed = "diff HEAD --summary"
     renewdate = "commit --amend --reset-author --no-edit"
     s = "status -s"
+    seeconflicts = "git diff --name-only --diff-filter=U --relative"
     seestash = "stash show -p" # number as argument
     stashm = "stash -m" # name as argument
     unwatch = "update-index --assume-unchanged" # with file as argument
