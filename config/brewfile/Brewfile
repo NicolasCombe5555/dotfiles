@@ -9,6 +9,7 @@ brew fd
 brew ffmpeg
 brew figlet
 brew fzf
+brew graphviz
 brew git-delta
 brew hyperfine
 brew neofetch
