@@ -4,6 +4,7 @@
 brew alacritty
 brew bat
 brew black
+brew coreutils
 brew exa
 brew fd
 brew ffmpeg
