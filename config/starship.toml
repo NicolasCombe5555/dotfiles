@@ -13,7 +13,7 @@ style = "bold red"
 
 ### Git
 [git_branch]
-symbol = "🦖 "
+symbol = "🍄 "
 
 [git_status]
 up_to_date = "✅"

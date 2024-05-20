@@ -21,7 +21,6 @@ source $ZSH/oh-my-zsh.sh
 alias cdg='cd $(git rev-parse --show-toplevel)'
 alias dog='cat -b'
 
-### Methods
 
 ## General
 cleandd() {
@@ -44,11 +43,6 @@ gitpurge() {
   git prune
   git clean -d -f . # deletes all local current untracked files
   git reset --hard # discards local changes
-}
-
-ztash() {
-  readonly name=${1:?"You must specify a name for the stash to apply"}
-  git stash apply stash^{/${name}} 
 }
 
 ## Local
