@@ -2,7 +2,7 @@ sourcePaths=(
   "zshrc"
   "config/starship.toml"
   "config/brewfile/Brewfile"
-  "config/alacritty/alacritty.yml"
+  "config/alacritty/alacritty.toml"
 
   "git/.gitconfig"
 
@@ -23,7 +23,7 @@ destinationPaths=(
   "${HOME}/.zshrc"
   "${HOME}/.config/starship.toml"
   "${HOME}/.config/brewfile/Brewfile"
-  "${HOME}/.config/alacritty/alacritty.yml"
+  "${HOME}/.config/alacritty/alacritty.toml"
 
   "${HOME}/.gitconfig"
 
