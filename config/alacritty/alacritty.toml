@@ -1,0 +1,24 @@
+### https://alacritty.org/config-alacritty.html
+[window]
+startup_mode = "Fullscreen"
+
+[selection]
+save_to_clipboard = true
+
+
+### Fonts
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "Hack Nerd Font"
+style = "Bold Italic"
