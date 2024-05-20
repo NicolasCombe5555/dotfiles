@@ -2,7 +2,7 @@
 
 ### Oh my zsh config
 
-export ZSH="/Users/nicolascombe/.oh-my-zsh" # Path to my oh-my-zsh installation. (path might differ)
+export ZSH="/Users/nicolas.combe/.oh-my-zsh" # Path to my oh-my-zsh installation. (path might differ)
 
 ZSH_DISABLE_COMPFIX="true" # https://stackoverflow.com/questions/61433167/zsh-detects-insecure-completion-dependent-directories
 DISABLE_UPDATE_PROMPT="true"
